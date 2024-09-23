@@ -18,7 +18,7 @@ function InputField({
         {label}
       </label>
       <input
-        className="text-[1.2rem] font-[600] px-[1.5rem] py-[1rem] foucus:border-none focus:outline-none  border-[#00000022] focus:border-[2px] focus:border-[#015107] focus:rounded-[.75rem]  rounded-t-[.5rem] bg-[rgba(30,31,31,0.3)] border-[blue] border-b-[2px] placeholder:text-gray-600"
+        className="text-[1.8rem] font-[600] px-[1.5rem] py-[1rem] foucus:border-none focus:outline-none  border-[#00000022] focus:border-[2px] focus:border-[#015107] focus:rounded-[.75rem]  rounded-t-[.5rem] bg-[rgba(30,31,31,0.3)] border-[blue] border-b-[2px] placeholder:text-gray-600"
         type={type}
         placeholder={placeholder}
         value={value}

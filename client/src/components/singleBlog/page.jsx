@@ -23,7 +23,7 @@ const SinglePage =  () => {
   }
 
   return (
-    <div className={styles.container}>
+    <div style={{paddingInline : '4rem'}} className={styles.container}>
       <div className={styles.infoContainer}>
         <div className={styles.textContainer}>
           <h1 className={styles.title}>{data?.title}</h1>

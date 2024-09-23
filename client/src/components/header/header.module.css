@@ -3,6 +3,8 @@
     align-items: center;
     justify-content: space-between;
     height: 100px;
+    width: 100%;
+    padding-inline: 2rem;
   }
   
   .social {
@@ -16,6 +18,7 @@
     text-align: center;
     font-size: 36px;
     font-weight: bold;
+    color: rgba(255, 255, 255, 0.669);
   }
   
   .links {
@@ -25,6 +28,40 @@
     flex: 1;
     font-size: 20px;
   }
+
+.link{
+  position: relative;
+  border: 1px solid rgba(255, 255, 255, 0.55);
+  padding-inline: 1.6rem;
+  padding-block: .4rem;
+  border-radius: 2rem;
+  background-color: rgba(255, 255, 255, 0.527);
+  /* backdrop-filter: blur('5px'); */
+  backdrop-filter: blur(5px);
+  overflow: hidden;
+  &::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 2rem;
+    background: linear-gradient(45deg , rgb(152, 14, 232) , rgb(8, 173, 210));
+    z-index: -1;
+    top: 180%;
+    transition: all .3s linear;
+
+  }
+  
+
+  &:hover{
+    color: white;
+    &::after{
+      top: 0;
+    }
+  }
+}
   
   @media screen and (max-width: 1280px) {
     .logo {

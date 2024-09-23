@@ -83,17 +83,17 @@ function Register() {
   console.log(apiResponse);
   return (
     <div id="register-page"  >
-      <div className="grid w-full min-h-[100vh] place-content-center ">
+      <div className="grid w-full min-h-[100vh] place-content-center px-[4rem] ">
         <div
           id="register-page"
-          className="grid grid-cols-2 gap-[5rem] place-content-center w-full"
+          className="grid lg:grid-cols-2 grid-cols-1 gap-[5rem] place-content-center w-full"
         >
-          <div id="img" className="my-auto">
+          <div id="img" className="hidden my-auto lg:block">
             <img src={registerImage} alt="register-image" />
           </div>
-            <div id="form" className="border-[1px] border-[#3a393988] p-[2rem] rounded-[1rem]">
+            <div id="form" className="border-[1px] border-[#3a393988] p-[2rem] rounded-[1rem] w-full">
             <h4
-              className=" text-[2rem]  space-y-[2rem]"
+              className=" text-[2.8rem]  space-y-[2rem]"
               style={{ fontWeight: "400" }}
             >
               Welcome Users!
@@ -103,7 +103,7 @@ function Register() {
               encType="multipart/form-data"
               action="http://localhost:5000/api/v1/auth/register"
               onSubmit={handleSubmit}
-              className="w-full flex flex-col gap-[1rem] mt-[1rem] justify-center"
+              className="w-full flex flex-col gap-[2rem] mt-[1rem] justify-center"
             >
               <div
                 id="avtar-field"
@@ -113,7 +113,7 @@ function Register() {
                   htmlFor="file"
                   className="relative mx-auto hover:cursor-pointer"
                 >
-                <div id="img" className="w-[10rem] h-[10rem] rounded-full">
+                <div id="img" className="w-[20rem] h-[20rem] rounded-full">
                   <img
                   src={previewImage}
                   round = 'full'
@@ -128,7 +128,7 @@ function Register() {
                     className={
                       previewImage === "/src/assets/profile-photo.png"
                         ? "absolute top-[0%] left-[62%] "
-                        : "absolute top-[64%] left-[75%] "
+                        : "hidden"
                     }
                   />
                 </label>
@@ -202,9 +202,9 @@ function Register() {
                 id="button"
                 variant="contained"
                 type="submit"
-                className="w-full py-[.8rem] rounded-[.7rem]"
+                className="w-full py-[1.5rem] rounded-[.7rem]"
                 style={{
-                  fontSize: "1.4rem",
+                  fontSize: "2rem",
                   background: `linear-gradient(45deg , #5468FF ,#59C3FF)`,
                   ":hover": {
                     background: `linear-gradient(45deg , #59C3FF ,#5468FF)`,
@@ -216,12 +216,12 @@ function Register() {
                   <div className="absolute left-[65%] loader"></div>
                 )}
               </button>
-              <p className="font-[600] text-[1.4rem] py-[.2rem] text-center ">
+              <p className="font-[600] text-[2rem] py-[.2rem] text-center ">
                 OR,
               </p>
               <Link
                 to="/login"
-                className="text-[1.4rem] font-[600] text-center "
+                className="text-[2rem] font-[600] text-center "
               >
                 Already have an account?
                 <span className="hover:text-[#b703ee] text-[#b5f005]">

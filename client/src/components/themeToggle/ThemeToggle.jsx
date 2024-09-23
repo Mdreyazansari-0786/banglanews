@@ -9,7 +9,7 @@ const ThemeToggle = () => {
   const { toggle, theme } = useContext(ThemeContext);
   console.log(theme)
   return (
-    <div
+    <div id="link"
       className={styles.container}
       onClick={toggle}
       style={

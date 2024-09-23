@@ -12,12 +12,12 @@ function App() {
     body.style.backgroundColor = '#0f172a'
     body.style.color = 'white'
   }else{
-    body.style = `backgroundColor : white`
+    body.style = `backgroundColor : #dcdcf3`
   }
   console.log(process.env.NAME)
   return (
     <>
-    <div className="wrapper" >
+    <div className="relative wrapper " >
           <Header />
           <Outlet />
           <Footer />

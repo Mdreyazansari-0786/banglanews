@@ -1,6 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index1.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import {createBrowserRouter , RouterProvider} from 'react-router-dom'
@@ -19,6 +18,7 @@ import Register from './components/authentication/Register.jsx';
 import ForgotPassword from './components/authentication/ForgotPassword.jsx';
 import ResetPassword from './components/authentication/ResetPassword.jsx';
 import WritePage from './components/write/page.jsx';
+import { GOOGLE_CLIENT_ID } from './constant.js';
 
 const router = createBrowserRouter([{
   path : '/',
@@ -40,7 +40,7 @@ const router = createBrowserRouter([{
   },
   {
     path : '/login',
-    element : <GoogleOAuthProvider clientId={process.env.GOOGLE_CLIENT_ID}><Login /></GoogleOAuthProvider>
+    element : <GoogleOAuthProvider clientId={GOOGLE_CLIENT_ID}><Login /></GoogleOAuthProvider>
   },
   {
     path : 'signin',

@@ -1,5 +1,36 @@
-.link {
+.link{
+  position: relative;
+  border: 1px solid rgba(255, 255, 255, 0.55);
+  padding-inline: 1rem;
+  padding-block: .2rem;
+  border-radius: 2rem;
+  background-color: rgba(255, 255, 255, 0.527);
+  /* backdrop-filter: blur('5px'); */
+  backdrop-filter: blur(5px);
+  overflow: hidden;
   cursor: pointer;
+  &::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 2rem;
+    background: linear-gradient(45deg , rgb(152, 14, 232) , rgb(8, 173, 210));
+    z-index: -1;
+    top: 180%;
+    transition: all .3s linear;
+
+  }
+  
+
+  &:hover{
+    color: white;
+    &::after{
+      top: 0;
+    }
+  }
 }
 
 .burger {

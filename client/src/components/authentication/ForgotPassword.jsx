@@ -50,12 +50,12 @@ function ForgotPassword() {
             }}
           >
             <h4
-              className=" text-[1.5rem]  space-y-[2rem]"
+              className=" text-[2.4rem]  space-y-[2rem]"
               style={{ fontWeight: "400" }}
             >
               Forgot Password ?
             </h4>
-            <p className="text-[1.3rem] font-[600] my-[.8rem] px-[.5rem]">
+            <p className="text-[1.6rem] font-[600] my-[.8rem] px-[.5rem]">
               We will send password reset link on your entered email address.
             </p>
             <form
@@ -73,9 +73,9 @@ function ForgotPassword() {
               <button
                 variant="contained"
                 type="submit"
-                className="w-full py-[1rem] rounded-[.5rem]"
+                className="w-full py-[1.5rem] rounded-[.5rem]"
                 style={{
-                  fontSize: "1.3rem",
+                  fontSize: "1.7rem",
                   background: `linear-gradient(45deg , #5468FF ,#59C3FF)`,
                   ":hover": {
                     background: `linear-gradient(45deg , #59C3FF ,#5468FF)`,
@@ -88,10 +88,10 @@ function ForgotPassword() {
                 )}
               </button>
 
-              <p className="font-[600] text-[1.4rem] text-center">OR,</p>
+              <p className="font-[600] text-[2rem] text-center">OR,</p>
               <Link
                 to="/login"
-                className="text-[1.4rem] font-[600] text-center"
+                className="text-[2rem] font-[600] text-center"
               >
                 {`Already remember password?`}
                 <span className="hover:text-[#0077B6] text-[green]">

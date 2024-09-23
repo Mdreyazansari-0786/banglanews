@@ -74,14 +74,14 @@ function Login() {
   return (
     <div
       id="loginContainer"
-      className="w-full"
+      className="w-full px-[4rem]"
     >
       <div
         component={"main"}
         className="grid w-full place-content-center"
       >
-        <div id="login-page" className="grid grid-cols-2 gap-[10rem] bg-[] items-center justify-center ">
-          <div id="img" className="" style={{ backdropFilter: `blur(2px)` }}>
+        <div id="login-page" className="grid lg:grid-cols-2 grid-cols-1 gap-[10rem] bg-[] items-center justify-center ">
+          <div id="img" className="hidden lg:block" style={{ backdropFilter: `blur(2px)` }}>
             <img src={loginImg} alt="" />
           </div>
           <div id="form">
@@ -92,7 +92,7 @@ function Login() {
               className="w-full flex flex-col gap-[1.5rem]  mt-[1rem] border-[1px] border-[#656363b7] p-[2rem] rounded-[1rem]"
             >
             <h3
-              className=" text-[2rem]  space-y-[2rem] text-center"
+              className=" text-[2.4rem]  space-y-[2rem] text-center"
               style={{ fontWeight: "400" }}
             >
              Login
@@ -112,15 +112,15 @@ function Login() {
                 type={"password"}
               />
               <Link id="forgot-pass" to={"/forgot-password"}>
-                <span className="hover:text-[#b703ee] text-[#b5f005] text-[1.4rem] font-[600]">
+                <span className="hover:text-[#b703ee] text-[#b5f005] text-[2rem] font-[600]">
                   Forgot password?
                 </span>
               </Link>
               <button
                 type="submit"
-                className="w-full py-[1rem] rounded-[.5rem]"
+                className="w-full py-[1.6rem] rounded-[.5rem]"
                 style={{
-                  fontSize: "1.4rem",
+                  fontSize: "1.8rem",
                   background: `linear-gradient(45deg , #5468FF ,#59C3FF)`,
                   ":hover": {
                     background: `linear-gradient(45deg , #59C3FF ,#5468FF)`,
@@ -132,10 +132,10 @@ function Login() {
                   <div className="absolute left-[65%] loader"></div>
                 )}
               </button>
-              <p className="font-[600] text-[1.4rem] text-center">OR,</p>
+              <p className="font-[600] text-[1.8rem] text-center">OR,</p>
               <Link
                 to="/signin"
-                className="text-[1.4rem] font-[600] text-center"
+                className="text-[1.8rem] font-[600] text-center"
               >
                 {`Already haven't an account`}?
                 <span className="hover:text-[#b703ee] text-[#b5f005]">
@@ -144,9 +144,9 @@ function Login() {
                 </span>
               </Link>
               <div
-                className="w-full my-[2rem] py-[1rem] rounded-[.5rem] hover:cursor-pointer text-center flex justify-center items-center gap-[2rem]"
+                className="w-full my-[2rem] py-[1.5rem] rounded-[.5rem] hover:cursor-pointer text-center flex justify-center items-center gap-[2rem]"
                 style={{
-                  fontSize: "1.4rem",
+                  fontSize: "1.8rem",
                   background: `linear-gradient(45deg , #A4B8FD ,#59C3FF)`,
                   ":hover": {
                     background: `linear-gradient(45deg , #59C3FF ,#5468FF)`,
@@ -154,7 +154,7 @@ function Login() {
                 }}
                 onClick={googleLogin}
               >
-                <FcGoogle size={'2.4rem'}/>
+                <FcGoogle size={'3rem'}/>
                 <span>
                 {apiResponse?.apiStatus === true ? "Submitting..." : "Click for login with Google"}
                 </span>
