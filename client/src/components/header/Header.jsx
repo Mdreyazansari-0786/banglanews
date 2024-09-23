@@ -50,7 +50,7 @@ const Header = () => {
         <img src={facebookImg} alt="tiktok" width={24} height={24} />
         <img src={youtubeImg} alt="youtube" width={24} height={24} />
       </div>
-      <div id="header-text" className={styles.logo}>MyNews</div>
+      <div id="header-text" className={styles.logo}>XENDEK WEB</div>
       <div id="header-link" className={styles.links}>
         <ThemeToggle />
         <Link  id="link"  href="/" className={styles.link}>Homepage</Link>
