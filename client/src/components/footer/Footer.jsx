@@ -1,6 +1,6 @@
 
 import styles from "./footer.module.css";
-import logo from '../../assets/Images/logo.png'
+import logo from '../../assets/Images/travel.png'
 import facebookImg from '../../assets/Images/facebook.png'
 import ticktokImg from '../../assets/Images/tiktok.png'
 import instagramImg from '../../assets/Images/instagram.png'
@@ -12,8 +12,8 @@ const Footer = () => {
     <div className={styles.container}>
       <div className={styles.info}>
         <div className={styles.logo}>
-          <img src={logo} alt="lama blog" width={50} height={50} />
-          <h1 className={styles.logoText}>Lamablog</h1>
+          <img className="rounded-full " src="https://cdn.pixabay.com/photo/2017/03/19/20/19/ball-2157465_640.png" alt="lama blog" width={50} height={50} />
+          <h1 className={styles.logoText}>XENDEK WEB</h1>
         </div>
         <p className={styles.desc}>
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim

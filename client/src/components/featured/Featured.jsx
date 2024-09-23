@@ -48,7 +48,7 @@ const Featured = () => {
         background : `linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(${blogImg})`,
         backgroundSize : 'cover'
       }} className="flex items-center justify-center w-full h-screen">
-      <div id="hero-layer" className={theme==='dark' ? 'bg-[#0f172a] absolute top-0 left-0 w-full h-[100.11vh]   ' : 'bg-[#dcdcf3] absolute top-0 left-0 w-full h-[100.11vh]   ' } style={{clipPath: `polygon(100% 82%, 0% 100%, 100% 100%)`}}></div>
+      <div id="hero-layer" className={theme==='dark' ? 'bg-[#0f172a] absolute top-0 left-0 w-full h-[100.11vh]   ' : 'bg-[#EEEEEE] absolute top-0 left-0 w-full h-[100.11vh]   ' } style={{clipPath: `polygon(100% 82%, 0% 100%, 100% 100%)`}}></div>
         <div id="hero-container" className="lg:max-w-[60%] max-w-[80%]  flex flex-col items-center gap-[4rem]">
             <div id="hero-title" className="flex-col items-center flex gap-[1rem]">
               <h1 id="hero-title" className="font-[500] tracking-wider  text-[white] text-[3.5rem] text-center">Multi-purpose Template</h1>
@@ -83,7 +83,7 @@ const Featured = () => {
             <h1 className="text-[2.4rem] relative text-[white] text-center">Recent News </h1>
           </div>
           <div id="details" className="flex items-end justify-between w-full h-full text-white"  >
-            <h2>Created By : Kamlesh Kumar</h2>
+            <h2>Created By : XENDEK WEB</h2>
             <h3>Created At : 2022-01-01</h3>
           </div>
         </div>
